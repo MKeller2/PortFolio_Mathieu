@@ -11,8 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { Outlet, Link } from "react-router-dom";
-import { faAsterisk } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import AsteriskIcon from "./AsteriskIcon";
 
 function Navbar() {
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -48,6 +47,7 @@ function Navbar() {
             />
             <MenuList>
               <MenuItem as={Link} to="">
+                Accueil
               </MenuItem>
               <MenuItem as={Link} to="/contact">
                 Contact
@@ -56,7 +56,7 @@ function Navbar() {
                 Projets
               </MenuItem>
               <MenuItem as={Link} to="/cv">
-                CV
+                Curriculum Vitæ
               </MenuItem>
               <MenuItem as={Link} to="/nba">
                 NBA Project
@@ -69,7 +69,7 @@ function Navbar() {
         ) : (
           <>
             <Text as={Link} to="" fontWeight="bold">
-              <FontAwesomeIcon icon={faAsterisk} />
+              <AsteriskIcon width={50} height={50} />
             </Text>
             <Text as={Link} to="/contact" fontWeight="bold">
               Contact
@@ -78,7 +78,7 @@ function Navbar() {
               Projets
             </Text>
             <Text as={Link} to="/cv" fontWeight="bold">
-              Cv
+              Curriculum Vitæ
             </Text>
           </>
         )}
