@@ -139,7 +139,7 @@ function Navbar() {
         justify="center"
         height="100%"
         textAlign="center"
-        marginTop="60px" // Espace pour la navbar du haut
+        padding="60px"
       >
         <Outlet />
       </Flex>

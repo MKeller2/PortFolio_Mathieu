@@ -5,22 +5,7 @@ import AsteriskIcon from "../shared/AsteriskIcon";
 function Home() {
   return (
     <>
-      {/* Arrière-plan de l'astérisque */}
-      <Box
-        position="absolute"
-        top="-170"
-        left="-450"
-        right="0"
-        bottom="0"
-        zIndex="1" // Pour s'assurer que l'astérisque est derrière tout
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-        opacity={1}
-      >
-        <AsteriskIcon width={600} height={600} />
-      </Box>
-
+      <AsteriskIcon width={600} height={600} />
       <Box textAlign="center" py={10} px={6} position="relative">
         <Heading as="h1" size="2xl" mb={6}>
           Bienvenue dans mon Portfolio
